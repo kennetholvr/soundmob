@@ -21,7 +21,7 @@ sound:string = '';
   ngOnInit() {
     this.soundBoard.soundReceive()
     .subscribe(data => {
-      console.log('it hits')
+      console.log(data)
      this.sound = data.toString();
     })
    
